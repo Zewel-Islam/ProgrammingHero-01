@@ -1,17 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Merriweather:wght@300;400;700;900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Merriweather", serif;
 }
 
 /* Shared style */
 .container {
   width: 85%;
   max-width: 1320px;
-  margin: 0 auto;
+  margin: 0 auto 120px;
 }
+
 .banner {
   position: relative;
   width: 100%;
@@ -25,18 +26,198 @@
   background-position: center;
 }
 
-.banner .content {
+.banner .banner-content {
   max-width: 640px;
   text-align: center;
+  font-family: "Merriweather", serif;
 }
-.banner .content p {
+.banner .banner-content p {
   color: #fff;
   font-size: 32px;
   font-weight: 400;
 }
-.banner .content h1 {
+.banner .banner-content h1 {
   color: #fff;
   font-size: 72px;
   font-weight: 900;
   line-height: 95px; /* 131.944% */
+}
+.discount {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  padding: 0 140px;
+}
+.discount-content h1 {
+  color: #f00;
+  font-family: Inter;
+  font-size: 88px;
+  font-weight: 700;
+  margin-bottom: 35px;
+  text-align: center;
+}
+.discount-content p {
+  color: #f00;
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.discount-content h3 {
+  color: #070211;
+  text-align: center;
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+.party {
+  position: relative;
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/resources/Vectorrr.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0 120px;
+}
+
+.party-content h2 {
+  color: #fff;
+  font-family: Merriweather;
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 88px; /* 137.5% */
+  letter-spacing: 7.04px;
+  margin-bottom: 30px;
+}
+.party-content p {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+  margin-bottom: 48px;
+}
+.party-content .btn-transparent {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 16px 32px;
+  background: transparent;
+  border: none;
+}
+
+.address {
+  position: relative;
+  width: 100%;
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 0, 0, 0.1) 0%,
+    rgba(255, 0, 0, 0) 100%
+  );
+}
+.address h3 {
+  color: #070211;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px;
+  text-transform: capitalize;
+}
+.address h3 span {
+  color: #f00;
+}
+.address .btn {
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #f00;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.offer {
+  position: relative;
+  width: 100%;
+  min-height: 482px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.offer .offer-text {
+  width: 33%;
+}
+.offer .offer-text h3 {
+  color: #f00;
+  text-align: left;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+}
+.offer .offer-text h2 {
+  color: #070211;
+  font-family: Merriweather;
+  font-size: 48px;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+.offer .offer-text p {
+  color: rgba(7, 2, 17, 0.6);
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px; /* 160% */
+}
+.offer .offer-image {
+  width: 33%;
+  border-radius: 463px;
+  border: 15px solid #f00;
+}
+.offer .offer-image img {
+  width: 100%;
+  padding: 30px;
+}
+.offer-logo {
+  width: 33%;
+  height: 180px;
+  padding-left: 160px;
+}
+.offer .offer-logo h2 {
+  color: #f00;
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 700;
+}
+.offer .offer-logo p {
+  color: rgba(7, 2, 17, 0.6);
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px; /* 160% */
+  margin-bottom: 43px;
 }
