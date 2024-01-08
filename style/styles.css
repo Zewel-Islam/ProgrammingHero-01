@@ -4,6 +4,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Merriweather", serif;
+  font-family: "Inter", sans-serif;
 }
 
 /* Shared style */
@@ -29,7 +31,7 @@
 .banner .banner-content {
   max-width: 640px;
   text-align: center;
-  font-family: "Merriweather", serif;
+  /* font-family: "Merriweather", serif; */
 }
 .banner .banner-content p {
   color: #fff;
@@ -47,12 +49,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "Inter", sans-serif;
+  /* font-family: "Inter", sans-serif; */
   padding: 0 140px;
 }
 .discount-content h1 {
   color: #f00;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 88px;
   font-weight: 700;
   margin-bottom: 35px;
@@ -61,7 +63,7 @@
 .discount-content p {
   color: #f00;
   text-align: center;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 24px;
   font-weight: 500;
   margin-bottom: 10px;
@@ -69,7 +71,7 @@
 .discount-content h3 {
   color: #070211;
   text-align: center;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 35px;
@@ -90,7 +92,7 @@
 
 .party-content h2 {
   color: #fff;
-  font-family: Merriweather;
+  font-family: "Merriweather", serif;
   font-size: 64px;
   font-weight: 900;
   line-height: 88px; /* 137.5% */
@@ -108,7 +110,7 @@
 .party-content .btn-transparent {
   color: #fff;
   text-align: center;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
@@ -134,7 +136,7 @@
 }
 .address h3 {
   color: #070211;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 600;
@@ -148,7 +150,7 @@
   display: inline-block;
   color: #fff;
   text-align: center;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
@@ -175,20 +177,20 @@
 .offer .offer-text h3 {
   color: #f00;
   text-align: left;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 24px;
   font-weight: 500;
 }
 .offer .offer-text h2 {
   color: #070211;
-  font-family: Merriweather;
+  font-family: "Merriweather", serif;
   font-size: 48px;
   font-weight: 900;
   text-transform: capitalize;
 }
 .offer .offer-text p {
   color: rgba(7, 2, 17, 0.6);
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 32px; /* 160% */
@@ -235,14 +237,14 @@
 }
 .holiday-content h3 {
   color: #070211;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 24px;
   font-weight: 500;
   margin-bottom: 16px;
 }
 .holiday-content h2 {
   color: #070211;
-  font-family: Merriweather;
+  font-family: "Merriweather", serif;;
   font-size: 72px;
   font-weight: 900;
   margin-bottom: 28px;
@@ -281,4 +283,58 @@
   position: absolute;
   top: 406px;
   z-index: 1;
+}
+
+/* Card section */
+
+.card {
+  position: relative;
+  width: 100%;
+  min-height: 1160px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.card-content h3 {
+  color: #f00;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.card-content h2 {
+  color: #070211;
+  font-family: "Merriweather", serif;
+  font-size:48px;
+  font-weight: 900;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+ .card-content p{
+  color: rgba(7, 2, 17, 0.6);
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 33px;
+ }
+ .card-image{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+ .card-image .card-image-box:hover{
+  transform: scale(.98);
+  -webkit-transform: scale(.98);
+  -moz-transform: scale(.98);
+  -ms-transform: scale(.98);
+  -o-transform: scale(.98);
 }
