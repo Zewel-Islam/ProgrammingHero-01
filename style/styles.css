@@ -417,3 +417,46 @@
   text-transform: capitalize;
   cursor: pointer;
 }
+.footer {
+  position: relative;
+  background-color: #070211;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 610px;
+}
+.row1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 120px 0px 40px 0px;
+}
+.contact-container a {
+  display: flex;
+  color: #fff;
+  gap: 5px;
+}
+hr {
+  width: 90%;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.15);
+  margin: 0 auto;
+}
+.row2 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 48px 0;
+}
+.row3 {
+  display: flex;
+  justify-content: space-around;
+  padding: 48px 0;
+}
+.row3 a {
+  color: #fff;
+  text-decoration: none;
+}
