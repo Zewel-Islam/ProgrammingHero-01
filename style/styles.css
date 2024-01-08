@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Merriweather:wght@300;400;700;900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -42,14 +42,12 @@
   color: #fff;
   font-size: 72px;
   font-weight: 900;
-  line-height: 95px; /* 131.944% */
 }
 .discount {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* font-family: "Inter", sans-serif; */
   padding: 0 140px;
 }
 .discount-content h1 {
@@ -117,8 +115,27 @@
   padding: 16px 32px;
   background: transparent;
   border: none;
+  transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -ms-transition: all .3s linear;
+  -o-transition: all .3s linear;
 }
-
+.party-content .btn-transparent:focus,
+.party-content .btn-transparent:hover {
+  letter-spacing: 2px;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  background-color: #f00;
+}
 .address {
   position: relative;
   width: 100%;
@@ -162,6 +179,20 @@
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
+  margin-top: 20px;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.address .btn:hover{
+  opacity: .7;
+  transform: scale(.98);
+  -webkit-transform: scale(.98);
+  -moz-transform: scale(.98);
+  -ms-transform: scale(.98);
+  -o-transform: scale(.98);
 }
 .offer {
   position: relative;
@@ -438,6 +469,7 @@
   display: flex;
   color: #fff;
   gap: 5px;
+  text-decoration: none;
 }
 hr {
   width: 90%;
@@ -459,4 +491,7 @@ hr {
 .row3 a {
   color: #fff;
   text-decoration: none;
+}
+.row3 a:hover{
+  text-decoration: underline;
 }
